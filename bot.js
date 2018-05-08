@@ -63,12 +63,6 @@ client.on("message", async message => {
   message.channel.bulkDelete(5)
   
   }
-  if(command === "erdem") {
-  message.channel.send("<------------------------------------------>");
-  message.channel.send("Erdem : Revona Sunucularının Tek Ve Has Kurucusu");
-  message.channel.send("https://bit.ly/2GsXq3u                          ");
-  message.channel.send("<------------------------------------------>");
-  }
   if(command === "seimi") {
   message.channel.send("<------------------------------------------>");
   message.channel.send("steam profili:");
@@ -93,7 +87,7 @@ client.on("message", async message => {
   message.channel.send("<------------------------------------------>");
   message.channel.send("                                         ");
   message.channel.send("                                         ");
-  message.channel.send(`${message.author.tag} HERKESI SELAMLIYOR`);
+  message.channel.send(`${message.author} HERKESI SELAMLIYOR`);
   message.channel.send("                                         ");
   message.channel.send("                                         ");
   message.channel.send("<------------------------------------------>");
