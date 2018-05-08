@@ -23,10 +23,7 @@ client.on("guildCreate", guild => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {		
-			msg.author.sendMessage('Aleyküm selam ağam'); 
-		} else
-		msg.reply('Aleyküm selam, hoş geldin ^^');
-		}
+	msg.author.sendMessage(`Aleyküm selam `); 
 	}
 });
 
