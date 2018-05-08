@@ -87,7 +87,7 @@ client.on("message", async message => {
   message.channel.send("<------------------------------------------>");
   message.channel.send("                                         ");
   message.channel.send("                                         ");
-  message.channel.send(`${message.author} HERKESI SELAMLIYOR`);
+  message.channel.send(`${message.author} HERKESI SELAMLIYOR @here`);
   message.channel.send("                                         ");
   message.channel.send("                                         ");
   message.channel.send("<------------------------------------------>");
