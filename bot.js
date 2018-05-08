@@ -24,7 +24,7 @@ client.on("guildCreate", guild => {
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
 		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage('Aleyküm selam,  hoş geldin ^^'); 
+			msg.author.sendMessage('Aleyküm selam ağam'); 
 		} else {
 		msg.reply('Aleyküm selam, hoş geldin ^^');
 		}
