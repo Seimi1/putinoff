@@ -275,4 +275,9 @@ if(command === "ct") {
   }
 });
 
+bot.user.setStatus('Online')
+
+bot.user.setGame('Hentai')
+});
+
 client.login(process.env.BOT_TOKEN);
