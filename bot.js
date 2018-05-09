@@ -12,9 +12,11 @@ client.on("ready", () => {
  
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
  
-  client.user.setGame(` ${client.guilds.size} sv ye bulasti ++help`);
-});
+        bot.user.setStatus('Online')
 
+
+	bot.user.setGame('Hentai')
+});
 client.on("guildCreate", guild => {
   
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
