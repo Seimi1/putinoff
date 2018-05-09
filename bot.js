@@ -39,7 +39,6 @@ client.on("message", async message => {
 
   if(message.content.indexOf(config.prefix) !== 0) return;
   
-
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
@@ -217,7 +216,14 @@ client.on("message", async message => {
     message.channel.send("Leo : erdemin yancısı");
   }
   
-  
+  if(message.content.startsWith(prefix + 'setgame')) {
+   if(!sonuc) {
+       sonuc = null
+   } 
+   bot.user.setActivity(sonuc)  
+}
+
+		
   if(command === "kick") {
     if(!message.member.roles.some(r=>["Sunucu", "Ekibi", "Kurucu", "Yetkilisi", "Sorumlusu"].includes(r.name)) )
       return message.reply("Yetkin yok veled!");
