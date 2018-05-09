@@ -274,10 +274,13 @@ if(command === "ct") {
       .catch(error => message.reply(`Hata : ${error}`));
   }
 });
+bot.on('ready' , () => {
+    console.log('Bot Launched...')
+	
+	bot.user.setStatus('Online')
 
-bot.user.setStatus('Online')
 
-bot.user.setGame('Hentai')
+	bot.user.setGame('Hentai')
 });
 
 client.login(process.env.BOT_TOKEN);
