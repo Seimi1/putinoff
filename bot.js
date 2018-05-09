@@ -274,7 +274,7 @@ if(command === "ct") {
 
 if(message.content.startsWith(prefix + 'setgame')) {
    if(!sonuc) {
-       sonuc = null
+       sonuc = prefix + 'Hentai'
    } 
    bot.user.setActivity(sonuc)  
 }
