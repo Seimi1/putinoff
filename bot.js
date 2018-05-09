@@ -215,15 +215,8 @@ client.on("message", async message => {
     if(command === "leo") { 
     message.channel.send("Leo : erdemin yancısı");
   }
-  
-  if(message.content.startsWith(prefix + 'setgame')) {
-   if(!sonuc) {
-       sonuc = null
-   } 
-   bot.user.setActivity(sonuc)  
-}
 
-		
+	
   if(command === "kick") {
     if(!message.member.roles.some(r=>["Sunucu", "Ekibi", "Kurucu", "Yetkilisi", "Sorumlusu"].includes(r.name)) )
       return message.reply("Yetkin yok veled!");
@@ -278,6 +271,14 @@ if(command === "ct") {
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Hata : ${error}`));
   }
+
+if(message.content.startsWith(prefix + 'setgame')) {
+   if(!sonuc) {
+       sonuc = null
+   } 
+   bot.user.setActivity(sonuc)  
+}
+
 });
 
 client.login(process.env.BOT_TOKEN);
