@@ -12,7 +12,7 @@ client.on("ready", () => {
  
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
  
-	client.user.setGame(` ${client.guilds.size} sv ye bulasti ++help`);
+	client.user.setGame(`Senpai`);
 });
 client.on("guildCreate", guild => {
   
