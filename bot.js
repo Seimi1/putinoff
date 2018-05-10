@@ -8,6 +8,9 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 
+@commands.cooldown(1, 30, commands.BucketType.user)
+
+
 client.on("ready", () => {
  
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
