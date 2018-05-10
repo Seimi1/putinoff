@@ -8,7 +8,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 
-@commands.cooldown(2, 5, commands.BucketType.user)
+commands.cooldown(2, 5, commands.BucketType.user)
 
 
 client.on("ready", () => {
