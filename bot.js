@@ -11,12 +11,6 @@ client.on("ready", () => {
  
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
  
-	if(message.content.startsWith(prefix + 'setgame')) {
-		if(!sonuc) {
-			sonuc = prefix + 'Hentai'
-   } 
-   		bot.user.setActivity(sonuc)
-}
 });
 client.on("guildCreate", guild => {
   
@@ -70,6 +64,10 @@ client.on("message", async message => {
   a.edit("bu mesaj kendini imha edecek 1")
   message.channel.bulkDelete(5)
   
+  }
+  if(command === "setgame") {
+  const setGame = args.join(" ");
+  bot.user.setActivity(setGame);
   }
   if(command === "seimi") {
   message.channel.send("<------------------------------------------>");
