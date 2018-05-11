@@ -15,7 +15,7 @@ client.on("ready", () => {
 		if(!sonuc) {
 			sonuc = prefix + 'Hentai'
    } 
-   	bot.user.setActivity(sonuc)
+   		bot.user.setActivity(sonuc)
 }
 });
 client.on("guildCreate", guild => {
