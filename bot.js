@@ -8,7 +8,6 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 
-commands.cooldown(1, 5, commands.BucketType.user)
 
 
 client.on("ready", () => {
@@ -53,10 +52,10 @@ client.on("message", async message => {
     m.edit(`pingin ${m.createdTimestamp - message.createdTimestamp}ms. botun pingi : ${Math.round(client.ping)}ms`);
   }
   if(command === "help") {
-  message.channel.send("++soyle (mesajiniz)");
-  message.channel.send("++sevap");
-  message.channel.send("++kurucu");
-  message.channel.send("++leo");
+  message.channel.send("soyle (mesajiniz)");
+  message.channel.send("sevap");
+  message.channel.send("kurucu");
+  message.channel.send("leo");
   message.channel.send("++erdem (erdem bilgi)");
   message.channel.send("++ct (2-100 arası sayı) (chati temizler)");
   message.channel.send("++help");
