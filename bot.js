@@ -7,10 +7,13 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 
+var Game = "s!help" 
+
+
 client.on("ready", () => {
  
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-  client.user.setActivity("s!help")
+  client.user.setActivity(Game)
 });
 
 client.on('message', msg => {
