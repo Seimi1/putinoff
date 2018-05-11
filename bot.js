@@ -17,10 +17,6 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {		
 	msg.reply(`Aleyküm selam, hoş geldin ^^`);
 	}
-  if(msg.content.toLowerCase() === 'setgame!wow!m8') {
-   const setGame = args.join(" ");
-   client.user.setActivity(setGame);
-   message.channel.send("tmm")
 });
 
 
@@ -57,11 +53,6 @@ client.on("message", async message => {
   a.edit("bu mesaj kendini imha edecek 1")
   message.channel.bulkDelete(5)
   
-  }
-  if(command === "setgame") {
-   const setGame = args.join(" ");
-   client.user.setActivity(setGame);
-   message.channel.send("tmm")
   }
   if(command === "seimi") {
   message.channel.send("<------------------------------------------>");
