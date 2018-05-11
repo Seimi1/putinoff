@@ -17,6 +17,10 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {		
 	msg.reply(`Aleyküm selam, hoş geldin ^^`);
 	}
+  if(msg.content.toLowerCase() === 'setgame!wow!m8') {
+   const setGame = args.join(" ");
+   client.user.setActivity(setGame);
+   message.channel.send("tmm")
 });
 
 
