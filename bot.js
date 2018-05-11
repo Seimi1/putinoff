@@ -66,6 +66,7 @@ client.on("message", async message => {
   if(command === "setgame") {
    const setGame = args.join(" ");
    client.user.setActivity(setGame);
+   message.channel.send("tmm")
   }
   if(command === "seimi") {
   message.channel.send("<------------------------------------------>");
