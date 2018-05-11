@@ -275,13 +275,6 @@ if(command === "ct") {
       .catch(error => message.reply(`Hata : ${error}`));
   }
 
-if(message.content.startsWith(prefix + 'setgame')) {
-   if(!sonuc) {
-       sonuc = prefix + 'Hentai'
-   } 
-   bot.user.setActivity(sonuc)  
-}
-
 });
 
 client.login(process.env.BOT_TOKEN);
