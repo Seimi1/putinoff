@@ -106,6 +106,7 @@ client.on("message", async message => {
   
     message.channel.send(sayMessage);
   }
+	asdasdadsadasd
   if(command === "sevap") { 
     const m = await message.channel.send("opening semavats doors please standby.");
     m.edit("opening semavats doors please standby..");
