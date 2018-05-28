@@ -19,12 +19,6 @@ client.on('message', msg => {
 	}
 });
 
-client.on.setActivity('discord.js', { type: 'WATCHING' })
-   then(presence => console.log(`Activity set to ${presence.game.name}`))
-   catch(console.error);
-        }
-});
-
 client.on("message", async message => {
 
   if(message.author.bot) return;
