@@ -7,12 +7,6 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 
-client.on(pass_context = True)
-async def kick(ctx, userName: discord.User):
-    """Kick A User from server"""
-    await client.kick(userName)
-    await client.say("__**Successfully User Has Been Kicked!**__")
-});
 
 client.on("ready", () => {
  
