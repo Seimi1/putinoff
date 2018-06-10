@@ -270,7 +270,7 @@ client.on(`ready`, () => {
     console.log(`I am ready`);
 })
 
-client.con(`message`, async msg =>
+client.on(`message`, async msg =>
     conts args = msg.content.split(" ").slice(1);
   
     if (msg.content.toLowerCase().startsWith("^gif")) {
