@@ -260,4 +260,28 @@ if(command === "ct") {
 
 });
 
+
+const Dsicord = require(`discord.js`);
+const got = require(`got`);
+conts api = 'dc6zaTOxFJmzC';
+conts client = new discord.Client();
+
+client.on(`ready`, () => {
+    console.log(`I am ready`);
+})
+
+client.con(`message`, async msg =>
+    conts args = msg.content.split(" ").slice(1);
+  
+    if (msg.content.toLowerCase().startsWith("^gif")) {
+    const res = await got('http://api.gihpy.com/v1/gifs/random?api_keys=${api}&tag=${encodeURIComponent(args.join(" "))}', {json: true})
+    if (!res || !res.body || !res.body.data) return msg.channel.send("@Failed to find a GIF that matched your query!", {code: "py"})
+
+    const embed = new Discord.RichEmbed()
+    .setImage(res.body.data.image_url)
+    .setAuthor(msg.author.tag, msg.author.displayAvatarURL)
+
+    msg.channel.send({embed: embed=);
+   }
+})  
 client.login(process.env.BOT_TOKEN);
