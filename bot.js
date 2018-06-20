@@ -258,18 +258,7 @@ if(command === "ct") {
       .catch(error => message.reply(`Hata : ${error}`));
   }
 
-});
-
-
-const Dsicord = require(`discord.js`);
-const got = require(`got`);
-conts api = 'dc6zaTOxFJmzC';
-conts client = new discord.Client();
-
-client.on(`ready`, () => {
-    console.log(`I am ready`);
-})
-
+conts api = 'pFKZou1UIs5SPJoea1gONB1BMSycKg7g';
 client.on(`message`, async msg =>
     conts args = msg.content.split(" ").slice(1);
   
@@ -283,6 +272,6 @@ client.on(`message`, async msg =>
 
     msg.channel.send({embed: embed=);
    }
-})  
+});
 
 client.login(process.env.BOT_TOKEN);
